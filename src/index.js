@@ -11,9 +11,15 @@ dotenv.config({
 })
 
 connectDB()
+.then(()=>{
+
+})
+.catch((err) => {
+    console.error("MongoDB Connection Error !! ", err)
+})
 
 
-/* IFFe approach - not recomended
+/* IFFe approach - not recommended
 ;(async ()=>{
     try {
         console.log("port : " , process.env.PORT)
